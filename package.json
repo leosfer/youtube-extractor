@@ -1,0 +1,47 @@
+{
+    "name": "youtube-data-extractor",
+    "version": "1.0.0",
+    "description": "Baixa dados de vídeos de um canal do YouTube usando yt-dlp.",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron .",
+      "build": "electron-builder"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^1.7.2",
+      "xlsx": "^0.18.5"
+    },
+    "devDependencies": {
+      "electron": "^31.0.2",
+      "electron-builder": "^24.13.3"
+    },
+    "build": {
+      "appId": "com.electron.youtubedataextractor",
+      "productName": "YT Data Harvester",
+      "directories": {
+        "output": "dist"
+      },
+      "files": [
+        "**/*"
+      ],
+      "extraResources": [
+        {
+          "from": "bin",
+          "to": "bin",
+          "filter": [
+            "**/*"
+          ]
+        }
+      ],
+      "win": {
+        "target": "nsis"
+      },
+      "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true
+      }
+    }
+  }
