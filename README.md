@@ -2,10 +2,6 @@
 
 A desktop application built with Electron to extract video metadata (titles, view counts, upload dates) and transcriptions from any YouTube channel. The extracted data can be easily exported to both XLSX (Excel) and JSON formats for analysis.
 
-
-
-*It's highly recommended to replace the image link above with a real screenshot or GIF of the application in action.*
-
 ## ✨ Features
 
 -   **Channel Video Fetching**: Input any YouTube channel URL to get a complete list of all its videos.
